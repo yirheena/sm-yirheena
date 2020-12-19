@@ -1,0 +1,271 @@
+body {
+    width: 1920px;
+    height: 1080px;
+    margin: 0;
+}
+header{
+    background-image: url(../assets/images/SMweb/main-img.png);
+    display: flex;
+    width: 1920px;
+    height: 1080px;
+    flex-direction: column;
+}
+.header-top {
+    display: flex;
+    flex-direction:row; 
+    justify-content: space-around;
+    margin: 99px;
+}
+.title2 {
+    margin: 0;
+    font-family: Muli;
+    font-size: 50px;
+    font-weight: Extrabold;
+    color: #f7ae3b;
+}
+.title2 {
+    padding-top: 99px;
+}
+.story-top {
+    margin: 0;
+    padding-top: 259px;
+}
+.about-top .title2 {
+    color : #ffffff;
+}
+.newcolor {
+    color:#cae941
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+} 
+.menu li {
+    display: inline;
+}
+.menu a{
+    font-weight: bold;
+    font-family: Muli;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: .32px 16px;
+}
+.personal ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+} 
+.personal ul li {
+    display: inline;
+}
+.personal ul li a{
+    font-weight: bold;
+    font-family: Muli;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: .32px 16px;
+}
+.social ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+} 
+.social ul li {
+    display: inline;
+}
+.social ul li a{
+    font-weight: bold;
+    font-family: Muli;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: .32px 16px;
+}
+.menu__list .personal__list .social__list {
+    display: flex;
+    justify-content: space-between;
+}
+.header-content{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    color: #FFFFFF;
+    -webkit-border-radius:35px;
+    -moz-border-radius:35px;
+    -ms-border-radius:35px;
+    -o-border-radius:35px;
+}
+.btn--green-bg {
+    background-color:#0aa566;
+    border-radius:35px;
+    height: 70px;
+    width: 280px;
+    font-weight: bold;
+    font-family: Muli;
+    font-size: 24px;
+
+}
+.btn--opacity-bg {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-color: #ffffff;
+    height: 60px;
+    width: 204px;
+    font-weight: regular;
+    font-family: Muli;
+    font-size: 21px;
+    border-radius:30px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+.smoothies {
+    text-align: center;
+}
+.smoothies-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.h2 {
+    font-family:Muli;
+    font-weight: Extrabold;
+}
+.title3 {
+    width: 55px;
+    color :#ffffff;
+}
+
+.about {
+    height: 800px;
+
+}
+.about-top {
+    display: inline-block;
+    padding-top: 99px;
+    width: 1086px;
+}
+.summer {
+    widows: 691px;
+    height: 818px;
+    padding-left: 143px;
+    padding-top: 64px;
+
+}
+.products-list{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+}
+.products-choko {
+    background-color: #632b15;
+}
+.products-vegan {
+    background-color: #168571;
+}
+.products-lemon {
+background-color: #f3b03d;
+}
+.products-turmeric {
+background-color: #c0481c;
+}
+.products-list__item {
+    flex-grow: 1; 
+    text-align: center;
+    width: 480px;
+    height: 720px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 129px;
+}
+img.products__item {
+    width: 119px;
+    height: 303px;
+}
+.name {
+    font-family: Muli;
+    font-weight: bold;
+    font-size: 24px;
+    color:#ffffff;
+}
+.thin {
+    font-style: regular;
+    font-size : 21px;
+}
+.story-top {
+    padding-top: 259px;
+    padding-left: 308px;
+}
+.story-pic {
+    width: 585px;
+    height: 601px;
+    padding-top: 120px;
+    padding-bottom: 160px;
+    padding-right: 310px;
+}
+.testimonials {
+    text-align: center;
+}
+
+.instagram-block {
+    display: flex;
+}
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: stretch;
+    background-color: #fbaf39;
+}
+.footer-top__item {
+    flex-grow:1;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    
+}
+.footer-buttom {
+    background-color: #712d1c;
+}
+.about {
+    background-color: #11846e;
+    display: flex;   
+}
+.story {
+    display: flex;
+}
+.testimonials {
+    background-color: #6a2f1e;
+}
+.blog {
+    display: flex;
+}
+.instagram__icon--white {
+    width: 26px;
+    height: 26px;
+    background-color :green;
+}
+.instagram-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.instagram-list__item {
+    flex-grow: 1;
+}
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+}
+.blog-pic {
+    width: 555px;
+    height: 400px;
+    padding-right: 360px;
+}

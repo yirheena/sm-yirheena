@@ -4,168 +4,234 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--подключение стилей, последний - нужный мне-->
+    <!--сброс стилей : link rel="stylesheet" href="css/reset.css"-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header class="header">
         <div class="header-top">
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Shop</a></li>
-                    <li><a href="">Story</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Testimonials</a></li>
+            <div class="header__top-inner">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="">SHOP</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="">HOME</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="">STORY</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="">ABOUT</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="">BLOG</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="">TESTIMONIALS</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>    
+            <div class="logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__img" src="./assets/images/SMweb/Logo.png" alt="">
+                </a>
+            </div>
+            <div class="personal">
+                <ul class="personal__list">
+                    <li class="personal__list-item">
+                        <a class="personal__link" href="">
+                            <img class="personal__icon-search" src="./assets/images/SMweb/Search-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="personal__list-item">
+                        <a class="personal__link" href="">
+                            <img class="personal__icon-user" src="./assets/images/SMweb/User-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="personal__list-item">
+                        <a class="personal__link-cart" href="">
+                            <img class="personal__cart-icon" src="./assets/images/SMweb/Cart-icon.png" alt="">
+                            <span class="personal__cart-count">3</span>
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-        </div>
-        <div class="logo">
-            <a href="">
-                <img src="" alt="">
-            </a>
-        </div>
-        <div class="personal">
-                <ul>
-                    <li>
-                        <a href=""><img src="" alt="search-icon"></a>
+            </div>
+            <div class="social">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link" href="">
+                            <img class="social__icon" src="./assets/images/SMweb/Facebook.png" alt="Facebook">
+                        </a>
                     </li>
-                    <li>
-                        <a href=""><img src="" alt="user-icon"></a>
+                    <li class="social__item">
+                        <a class="social__link" href="">
+                            <img class="social__icon" src="./assets/images/SMweb/Pinterest.png" alt="Pinterest">
+                        </a>
                     </li>
-                    <li>
-                        <a href=""><img src="" alt="cart"></a>
-                        <span>3</span>
+                    <li class="social__item">
+                        <a class="social__link" href="">
+                            <img class="social__icon" src="./assets/images/SMweb/Instagram.png" alt="Instagram">
+                        </a>
                     </li>
                 </ul>
-        </div>
-        <div class="social">
-            <ul>
-                <li>
-                    <a href=""><img src="" alt="Facebook"></a>
-                </li>
-                <li>
-                    <a href=""><img src="" alt="Pinterest"></a>
-                </li>
-                <li>
-                    <a href=""><img src="" alt="Instagram"></a>
-                </li>
-            </ul>
+            </div>
         </div>
         <div class="header-content">
-            <button>Shop now</button>
+            <div class="header__content-inner">
+                <div class="header__btn-wrapper">
+                    <button class="btn btn--green-bg">Shop now
+                        <img class="arrow--yellow"
+                            src="./assets/images/SMweb/Arrow.png" alt="">
+                    </button>
+                </div>
+            </div>
         </div>
-        <h1>Super smoothies</h1>
     </header>
     <section class="smoothies">
-        <h2>What are these smoothies?</h2>
-        <p>A smoothie is a drink made from pureed raw fruit, vegetables, and sometimes dairy products 
+        <h2 class="title2">What are these smoothies?</h2>
+        <p class="smoothies__text">A smoothie is a drink made from pureed raw fruit, vegetables, and sometimes dairy products 
             (milk, yogurt, ice-cream or cottage cheese), typically using a blender. Smoothies may be made using 
             other ingredients, such as water, crushed ice, fruit juice, sweeteners (e.g. honey, sugar, stevia, or syrup), 
             whey powder, plant milk, nuts, nut butter, seeds, tea, chocolate, herbal supplements, or nutritional supplements.</p>
-        <div class="smooties-block">    
+        <div class="smoothies-block">    
             <div class="sm-features">
-                <img src="" alt="Plant Based">
-                <p>Plant Based</p>
+                <img class="sm-features__item" src="./assets/images/SMweb/plantbased.png" alt="Plant Based">
+                <h3>Plant Based</h3>
             </div>
             <div class="sm-features">
-                <img src="" alt="Vegan">
-                <p>Vegan</p>
+                <img class="sm-features__item" src="./assets/images/SMweb/vegan.png" alt="Vegan">
+                <h3>Vegan</h3>
             </div>
             <div class="sm-features">
-                <img src="" alt="Paleo">
-                <p>Paleo</p>
+                <img class="sm-features__item" src="./assets/images/SMweb/paleo.png" alt="Paleo">
+                <h3>Paleo</h3>
             </div>
             <div class="sm-features">
-                <img src="" alt="Gluten-Free">
-                <p>Gluten-Free</p>
+                <img class="sm-features__item" src="./assets/images/SMweb/gluten-free.png" alt="Gluten-Free">
+                <h3>Gluten-Free</h3>
             </div>
             <div class="sm-features">
-                <img src="" alt="Corn-Free">
-                <p>Corn-Free</p>
+                <img class="sm-features__item" src="./assets/images/SMweb/conr-free.png" alt="Corn-Free">
+                <h3>Corn-Free</h3>
             </div>
             <div class="sm-features">
-                <img src="" alt="Soy-Free">
-                <p>Soy-Free</p>
+                <img class="sm-features__item" src="./assets/images/SMweb/soy-free.png" alt="Soy-Free">
+                <h3>Soy-Free</h3>
             </div>
             <div class="sm-features">
-                <img src="" alt="Ayurverdic">
-                <p>Ayurverdic</p>
+                <img class="sm-features__item" src="./assets/images/SMweb/ayurvedic.png" alt="Ayurverdic">
+                <h3>Ayurverdic</h3>
             </div>
             <div class="sm-features">
-                <img src="" alt="Made With Love">
-                <p>Made With Love</p>
+                <img class="sm-features__item" src="./assets/images/SMweb/madelove.png" alt="Made With Love">
+                <h3>Made With Love</h3>
             </div>
         </div>
     </section>
     <section class="about">
-        <img src="" alt="welcome-smoothie">
-        <div class="About">
-            <h2>What makes Smoothie an awesome drink? </h2>
+        <img class="summer" src="./assets/images/SMweb/welsum.png" alt="welcome-summer">
+        <div class="about-top">
+            <h2 class="title3">What makes Smoothie
+                an <span class="newcolor">awesome drink?</span></h2>
             <ul>
-                <li>Crunchy Puffs Texture</li>
-                <li>100 Calories per drink</li>
-                <li>4g Plant Protein </li>
-                <li>Good source of Magnesium & Vitamin B6</li>
-                <li>No Sugar in our Savory Flavors</li>
+                <li>Crunchy <span>Puffs Texture</span></li>
+                <li>100 Calories <span>per drink</span></li>
+                <li><span>4g Plant Protein</span></li>
+                <li><span>Good source of</span> Magnesium & Vitamin B6</li>
+                <li>No Sugar <span>in our Savory Flavors</span></li>
                 <li>Non-GMO, Vegan & Paleo</li>
                 <li>Gluten-Free & Grain-Free</li>
                 <li>Corn-Free & Soy-Free</li>
             </ul>
-            <button>About organic smoothies</button>           
+                <div class="about__btn-wrapper">
+                    <button class="btn btn--green-bg">About organic smoothies
+                        <img class="arrow--yellow" src="./assets/images/SMweb/Arrow.png">
+                    </button>  
+                </div>                 
         </div>
     </section>
     <section class="products">
-        <div>
-            <img src="" alt="Dark Chocolate">
-            <p>Dark Chocolate Smoothie</p>
-            <p>100 ml</p>
-            <button>Buy</button>
-        </div>
-        <div>
-            <img src="" alt="Vegan Lettuce">
-            <p>Vegan Lettuce Smoothie</p> 
-            <p>100 ml</p>
-            <button>Buy</button>
-        </div>
-        <div>
-            <img src="" alt="Lemon Ginger">
-            <p>Lemon Ginger Smoothie</p>
-            <p>100 ml</p>
-            <button>Buy</button>
-        </div>
-        <div>
-            <img src="" alt="Turmeric Garlic">
-            <p>Turmeric Garlic Smoothie</p>
-            <p>100 ml</p>
-            <button>Buy</button>
-        </div>
+        <div class="products-list">
+            <div class="products-list__item products-choko">
+                <img class="products__item" src="./assets/images/SMweb/darkchoco.png" alt="Dark Chocolate">
+                <p class="name">Dark Chocolate Smoothie</p>
+                <p class="name"><span class="thin">100 ml</span></p>
+                <div class="products__btn-wrapper">
+                    <button class="btn btn--opacity-bg">Buy
+                        <img class="arrow--yellow" src="./assets/images/SMweb/Arrow.png">
+                    </button>  
+                </div>                 
+            </div>
+            <div class="products-list__item products-vegan">
+                <img class="products__item" src="./assets/images/SMweb/veganlet.png" alt="Vegan Lettuce">
+                <p class="name">Vegan Lettuce Smoothie</p> 
+                <p class="name">100 ml</p>
+                <div class="products__btn-wrapper">
+                    <button class="btn btn--opacity-bg">Buy
+                        <img class="arrow--yellow" src="./assets/images/SMweb/Arrow.png">
+                    </button>
+                </div>      
+            </div>
+            <div class="products-list__item products-lemon">
+                <img class="products__item"  src="./assets/images/SMweb/lemongin.png" alt="Lemon Ginger">
+                <p class="name">Lemon Ginger Smoothie</p>
+                <p class="name">100 ml</p>
+                <div class="products__btn-wrapper">
+                    <button class="btn btn--opacity-bg">Buy
+                        <img class="arrow--yellow" src="./assets/images/SMweb/Arrow.png">
+                    </button>
+                </div>      
+            </div>
+            <div class="products-list__item products-turmeric">
+                <img class="products__item"  src="./assets/images/SMweb/turgarlic.png" alt="Turmeric Garlic">
+                <p class="name">Turmeric Garlic Smoothie</p>
+                <p class="name">100 ml</p>
+                <div class="products__btn-wrapper">
+                    <button class="btn btn--opacity-bg">Buy
+                        <img class="arrow--yellow" src="./assets/images/SMweb/Arrow.png">
+                    </button>
+                </div>      
+            </div>
+        </div>    
     </section>
     <section class="story">
-        <img src="" alt="our smoothie">
-        <div class="story">    
-            <h2>Our story</h2>
-            <p>As products typically using raw fruits or vegetables, 
+        <div class="story-top">    
+            <h3 class="title2">Our story</h3>
+            <p class="story-top__text">As products typically using raw fruits or vegetables, 
             smoothies include dietary fiber (e.g. pulp, skin, and seeds) 
             and so are thicker than fruit juice, often with a 
             consistency similar to a milkshake.</p>
-            <button>Who we are</button>
+            <div class="story__btn-wrapper">    
+                <button class="btn btn--green-bg">Who we are
+                    <img class="arrow--yellow"
+                        src="./assets/images/SMweb/Arrow.png" alt="">
+                </button>
+            </div>        
         </div>
+        <!--Штамп <img src="./assets/images/SMweb/Stamp.png" alt="stamp">-->
+        <img class="story-pic" src="./assets/images/SMweb/straberry.png" alt="our smoothie">
     </section>
     <section class="testimonials">
-        <div class="testimonials">
-            <h2>Why clients LOVE us?</h2>
-            <p><q>Smoothie is great. I don't know what else to say. 
+        <div class="testimonials-top">
+            <h3 class="title2">Why clients <span class="bolt">LOVE</span> us?</h3>
+            <p testimonials-top__review><q>Smoothie is great. I don't know what else to say. 
             I will let my mum know about this, she could really 
             make use of Smoothie! Smoothie saved my business.
             </q></p>
             <cite>- from Santa Monica, CA</cite>
             <p><span>Sarah A</span></p>
         </div>    
-        <img src="" alt="Person">
+        <img src="./assets/images/SMweb/face.png" alt="Face">
     </section>
     <section class="blog">
-        <h2>Our blog</h2>
-        <h3>ASAFOETIDA - THE NEXT TURMERIC?</h3>
+        <h3 class="title2">Our blog</h3>
+        <img class="blog-pic" src="./assets/images/SMweb/ourblog.png" alt="OurBlog>">
+        <h4 class="title4">ASAFOETIDA - THE NEXT TURMERIC?</h4>
         <time datetime="2020-06-16">June 16,2020</time>
         <p>If the fruit ingredients and the green vegetable<br>
             ingredients are both juiced ahead of time, the mixed juice<br>
@@ -173,69 +239,89 @@
             green juice or anything... <a href="">Read More</a></p>
     </section>
     <section class="instagram">
-        <a><img src="IconInsta" alt="InstaIcon">ashasuperfoods</a>
-        <div>
-            <img src="" alt="InstaPic1">
-            <img src="" alt="IconInsta">
-        </div>
-        <div>
-            <img src="" alt="InstaPic2">
-            <img src="" alt="IconInsta">
-        </div>
-        <div>
-            <img src="" alt="InstaPic3">
-            <img src="" alt="IconInsta">
-        </div>
-        <div>
-            <img src="" alt="InstaPic4">
-            <img src="" alt="IconInsta">
+        <a><img class="instagram__icon--green" src="./assets/images/SMweb/icon.png" alt="InstaIcon">ashasuperfoods</a>
+        <div class="instagram-list">
+            <div class="instagram-list__item">
+                <img src="./assets/images/SMweb/insta1.png" alt="InstaPic1">
+                <img class="instagram__icon--white" src="./assets/images/SMweb/icon1.png" alt="IconInsta">
+            </div>
+            <div class="instagram-list__item">
+                <img src="./assets/images/SMweb/insta2.png" alt="InstaPic2">
+                <img src="./assets/images/SMweb/icon1.png" alt="IconInsta">
+            </div>
+            <div class="instagram-list__item">
+                <img src="./assets/images/SMweb/insta3.png" alt="InstaPic3">
+                <img src="./assets/images/SMweb/icon1.png" alt="IconInsta">
+            </div>
+            <div class="instagram-list__item">
+                <img src="./assets/images/SMweb/insta4.png" alt="InstaPic4">
+                <img src="./assets/images/SMweb/icon1.png" alt="IconInsta">
+            </div>
         </div>
     </section>
     <footer>
         <section class="footer">
-            <div class="footer=top">
-                <div class="logo">
-                    <a href=""><img src="" alt="logo"></a>
-                </div>
-                <div class="Info">
-                    <h4>Information</h4>
-                    <ul>
-                        <li>Searchgit</li>
-                        <li>Contact us</li>
-                        <li>Terms & Conditions</li>
-                        <li>Privacy Policy</li>
-                    </ul>
-                </div>
-                <div class="Pay">
-                    <h4>Payment</h4>
-                    <ul>
-                        <li><a href=""><img src="" alt="AMEX"></a></li>
-                        <li><a href=""><img src="" alt="Apple Pay"></a></li>
-                        <li><a href=""><img src="" alt="Maestro"></a></li>
-                        <li><a href=""><img src="" alt="Discover"></a></li>
-                        <li><a href=""><img src="" alt="JCB"></a></li>
-                        <li><a href=""><img src="" alt="Mastercard"></a></li>
-                        <li><a href=""><img src="" alt="Paypal"></a></li>
-                        <li><a href=""><img src="" alt="Shopify Pay"></a></li>
-                        <li><a href=""><img src="" alt="Visa"></a></li>
-                    </ul>
-                </div>   
-                <div class="Sub">
-                    <div>
-                        <h4>Don’t miss out!</h4>
-                        <textarea placeholder="Subscribe to our newsletter"></textarea>
+            <div class="footer-top">
+                    <div class="footer-top__item">
+                        <a class="logo__link" href="#">
+                            <img class="logo__img" src="./assets/images/SMweb/Logo.png" alt="">
+                        </a>
                     </div>
-                    <div class="follow">
-                        <h4>Follow Us</h4>
-                        <ul>
-                            <li><a href=""><img src="" alt="Facebook"></a></li>
-                            <li><a href=""><img src="" alt="Pinterest"></a></li>
-                            <li><a href=""><img src="" alt="Instagram"></a></li>
+                    <div class="footer-top_item">
+                        <h5 class="title5">Information</h5>
+                        <ul class="info__list">
+                            <li class="info__item">
+                                <a class="info__link" href="">Search</a></li>
+                            <li class="info__item"><a class="info__link" href="">Contact us</a></li>
+                            <li class="info__item"><a class="info__link" href="">Terms & Conditions</a></li>
+                            <li class="info__item"><a class="info__link" href="">Privacy Policy</a></li>
                         </ul>
                     </div>
+                    <div class="footer-top__item">
+                        <h5 class="title5">Payment</h5>
+                        <ul class="payment__list">
+                            <li class="payment__item"><a class="pay__list" href=""><img src="./assets/images/SMweb/AMEX.png" alt="AMEX"></a></li>
+                            <li><a href=""><img src="./assets/images/SMweb/Apple Pay.png" alt="Apple Pay"></a></li>
+                            <li><a href=""><img src="./assets/images/SMweb/Maestro.png" alt="Maestro"></a></li>
+                            <li><a href=""><img src="./assets/images/SMweb/Discover.png" alt="Discover"></a></li>
+                            <li><a href=""><img src="./assets/images/SMweb/JCB.png" alt="JCB"></a></li>
+                            <li><a href=""><img src="./assets/images/SMweb/Master.png" alt="Mastercard"></a></li>
+                            <li><a href=""><img src="./assets/images/SMweb/Paypal.png" alt="Paypal"></a></li>
+                            <li><a href=""><img src="./assets/images/SMweb/Shopify.png" alt="Shopify Pay"></a></li>
+                            <li><a href=""><img src="./assets/images/SMweb/Visa.png" alt="Visa"></a></li>
+                        </ul>
+                    </div>   
+                    <div class="footer-top__item">
+                        <div>
+                            <h5 class="title5">Don’t miss out!</h5>
+                            <textarea placeholder="Subscribe to our newsletter"></textarea>
+                        </div>
+                        <div class="subscribe">
+                            <h4>Follow Us</h4>
+                            <div class="social">
+                                <ul class="social__list">
+                                    <li class="social__item">
+                                        <a class="social__link" href="">
+                                            <img class="social__icon" src="./assets/images/SMweb/Facebook.png" alt="Facebook">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="">
+                                            <img class="social__icon" src="./assets/images/SMweb/Pinterest.png" alt="Pinterest">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="">
+                                            <img class="social__icon" src="./assets/images/SMweb/Instagram.png" alt="Instagram">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>    
-            <div class="footer-bottom">
+            </div>        
+            <div class="footer-buttom">
                     <p>© 2020. All Rights Reserved.</p>
                     <p><img src="" alt="Top"><a href="#top">Top</a></p>
             </div>
