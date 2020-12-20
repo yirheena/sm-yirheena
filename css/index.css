@@ -22,10 +22,8 @@ header{
     font-size: 50px;
     font-weight: Extrabold;
     color: #f7ae3b;
-}
-.title2 {
     padding-top: 99px;
-}
+}    
 .story-top {
     margin: 0;
     padding-top: 259px;
@@ -138,7 +136,7 @@ header{
     font-weight: Extrabold;
 }
 .title3 {
-    width: 55px;
+    font-size: 55px;
     color :#ffffff;
 }
 
@@ -147,16 +145,20 @@ header{
 
 }
 .about-top {
-    display: inline-block;
+    display: block;
+    margin: 0;
     padding-top: 99px;
     width: 1086px;
+    padding-left: 141px;
 }
 .summer {
     widows: 691px;
     height: 818px;
     padding-left: 143px;
     padding-top: 64px;
-
+    position: relative;
+    z-index: 1
+    ;
 }
 .products-list{
     display: flex;
@@ -168,9 +170,11 @@ header{
 }
 .products-vegan {
     background-color: #168571;
+
 }
 .products-lemon {
 background-color: #f3b03d;
+
 }
 .products-turmeric {
 background-color: #c0481c;
@@ -182,11 +186,18 @@ background-color: #c0481c;
     height: 720px;
     justify-content: center;
     align-items: center;
-    padding-top: 129px;
 }
 img.products__item {
     width: 119px;
     height: 303px;
+    padding-top: 129px;
+
+}
+.summer {
+    widows: 691px;
+    height: 818px;
+    padding-left: 143px;
+    padding-top: 64px;
 }
 .name {
     font-family: Muli;
@@ -199,8 +210,10 @@ img.products__item {
     font-size : 21px;
 }
 .story-top {
+    margin: 0;
     padding-top: 259px;
     padding-left: 308px;
+    text-align: left;
 }
 .story-pic {
     width: 585px;
@@ -228,7 +241,7 @@ img.products__item {
     text-align: center;
     justify-content: center;
     align-items:center;
-    
+
 }
 .footer-buttom {
     background-color: #712d1c;
@@ -243,9 +256,6 @@ img.products__item {
 .testimonials {
     background-color: #6a2f1e;
 }
-.blog {
-    display: flex;
-}
 .instagram__icon--white {
     width: 26px;
     height: 26px;
@@ -259,13 +269,29 @@ img.products__item {
 .instagram-list__item {
     flex-grow: 1;
 }
-.blog {
+.blog-content {
     display: flex;
     flex-wrap: wrap;
-    flex-direction:column;
+    flex-direction: row;
 }
 .blog-pic {
     width: 555px;
     height: 400px;
-    padding-right: 360px;
+    padding-left: 360px;
+    padding-bottom: 200px;
+}
+.blog .title2 {
+    padding-left: 360px;
+    line-height: 98px;
+}
+.line {
+    color: #f2612d;
+    width: 687px;
+    height: 12px;
+    padding-top: 266px;
+    padding-bottom: 50px;
+}
+.instagram-id {
+    padding-left: 850px;
+    padding-bottom: 44px;
 }
