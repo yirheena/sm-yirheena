@@ -1,8 +1,7 @@
 body {
     width: 1920px;
-    height: 1080px;
     margin: 0;
-}
+} 
 header{
     background-image: url(../assets/images/SMweb/main-img.png);
     display: flex;
@@ -14,16 +13,67 @@ header{
     display: flex;
     flex-direction:row; 
     justify-content: space-around;
-    margin: 99px;
+    padding-top :99px;
 }
-.title2 {
+h2, h3, h4, h6 {
     margin: 0;
     font-family: Muli;
-    font-size: 50px;
-    font-weight: Extrabold;
+    font-weight: 800;
     color: #f7ae3b;
+    font-size: 50px;
+}
+.blog-content h2 {
+    padding-top :98px;
+    padding-left: 360px;
+}
+.blog-content h3 {
+    font-size: 30px;
+    color: #f2612d;
+    padding-left: 62px;
+}
+time {
+    padding-left: 62px;
+}
+.blog-content p {
+    padding-left: 124px; 
+}
+.footer-top h4 {
+    color: #ffffff;
+    font-size: 26px;
+}
+.footer-top h6 {
+    font-size: 18px;
+    color: #6d450c;
+}
+h5 {
+    margin: 0;
+    font-family: Muli;
+    font-weight: Bold;
+    font-size: 24px;
+    color:#ffffff;
+}
+p {
+    font-family: Muli;
+    font-weight: Regular;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.products-list__item p {
+    font-weight: Italic;
+    color: #ffffff;
+    font-size: 21px;
+}
+.smoothies h2 {
     padding-top: 99px;
-}    
+}
+.about h2 {
+    font-size: 55px;
+    color :#ffffff;
+}
+.testimonials-top span {
+    color: #f2612d;
+}
 .story-top {
     margin: 0;
     padding-top: 259px;
@@ -34,14 +84,16 @@ header{
 .newcolor {
     color:#cae941
 }
-
-.menu ul {
+ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 } 
-.menu li {
+.header-top li {
     display: inline;
+}
+*   {
+    border : 3px solid red;
 }
 .menu a{
     font-weight: bold;
@@ -51,14 +103,6 @@ header{
     text-decoration: none;
     padding: .32px 16px;
 }
-.personal ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-} 
-.personal ul li {
-    display: inline;
-}
 .personal ul li a{
     font-weight: bold;
     font-family: Muli;
@@ -66,14 +110,6 @@ header{
     color: #FFFFFF;
     text-decoration: none;
     padding: .32px 16px;
-}
-.social ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-} 
-.social ul li {
-    display: inline;
 }
 .social ul li a{
     font-weight: bold;
@@ -106,7 +142,6 @@ header{
     font-weight: bold;
     font-family: Muli;
     font-size: 24px;
-
 }
 .btn--opacity-bg {
     background-color: transparent;
@@ -130,19 +165,11 @@ header{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-.h2 {
-    font-family:Muli;
-    font-weight: Extrabold;
-}
-.title3 {
-    font-size: 55px;
-    color :#ffffff;
-}
-
+    flex-direction: row;
 .about {
     height: 800px;
-
+    background-color: #11846e;
+    display: flex;   
 }
 .about-top {
     display: block;
@@ -151,14 +178,22 @@ header{
     width: 1086px;
     padding-left: 141px;
 }
+.about-top li {
+    font-family: Muli;
+    font-weight: 800;
+    font-size: 21px;
+    color :#ffffff; 
+}
+li span {
+    font-weight: Regular;
+}
 .summer {
     widows: 691px;
     height: 818px;
     padding-left: 143px;
     padding-top: 64px;
     position: relative;
-    z-index: 1
-    ;
+    z-index: 1;
 }
 .products-list{
     display: flex;
@@ -170,7 +205,6 @@ header{
 }
 .products-vegan {
     background-color: #168571;
-
 }
 .products-lemon {
 background-color: #f3b03d;
@@ -191,24 +225,14 @@ img.products__item {
     width: 119px;
     height: 303px;
     padding-top: 129px;
-
-}
-.summer {
-    widows: 691px;
-    height: 818px;
-    padding-left: 143px;
-    padding-top: 64px;
-}
-.name {
-    font-family: Muli;
-    font-weight: bold;
-    font-size: 24px;
-    color:#ffffff;
+    margin-bottom: 34px;
 }
 .thin {
     font-style: regular;
     font-size : 21px;
 }
+.story {
+    display: flex;}
 .story-top {
     margin: 0;
     padding-top: 259px;
@@ -224,42 +248,24 @@ img.products__item {
 }
 .testimonials {
     text-align: center;
+    background-color: #6a2f1e;
 }
-
 .instagram-block {
     display: flex;
 }
-.footer-top {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: stretch;
-    background-color: #fbaf39;
-}
-.footer-top__item {
-    flex-grow:1;
+.instagram a {
+    display: block;
+    padding-bottom: 3px;
     text-align: center;
-    justify-content: center;
-    align-items:center;
-
+    color : #0aa566;
+    font-family: Muli;
+    font-weight: 800;
+    font-size : 24px;
+    margin-bottom: 44px;
 }
-.footer-buttom {
-    background-color: #712d1c;
-}
-.about {
-    background-color: #11846e;
-    display: flex;   
-}
-.story {
-    display: flex;
-}
-.testimonials {
-    background-color: #6a2f1e;
-}
-.instagram__icon--white {
-    width: 26px;
-    height: 26px;
-    background-color :green;
+.instagram a img {
+    margin : -6px;
+    padding-right :13px;
 }
 .instagram-list {
     display: flex;
@@ -267,7 +273,16 @@ img.products__item {
     flex-wrap: nowrap;
 }
 .instagram-list__item {
-    flex-grow: 1;
+    position: relative;
+    width: 384px;
+    height: 384px;
+}
+.instagram-list__item .insta-icon {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 338px;
+    left: 336px;
 }
 .blog-content {
     display: flex;
@@ -275,14 +290,11 @@ img.products__item {
     flex-direction: row;
 }
 .blog-pic {
+    margin: 0;
     width: 555px;
     height: 400px;
     padding-left: 360px;
     padding-bottom: 200px;
-}
-.blog .title2 {
-    padding-left: 360px;
-    line-height: 98px;
 }
 .line {
     color: #f2612d;
@@ -291,7 +303,20 @@ img.products__item {
     padding-top: 266px;
     padding-bottom: 50px;
 }
-.instagram-id {
-    padding-left: 850px;
-    padding-bottom: 44px;
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: #fbaf39;
+    padding-top: 80px;
+}
+.footer-top__item {
+    flex-grow:1;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+}
+.footer-buttom {
+    background-color: #712d1c;
 }
