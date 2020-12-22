@@ -1,35 +1,39 @@
 body {
-    width: 1920px;
     margin: 0;
+    width: 1920px;
 } 
 header{
     background-image: url(../assets/images/SMweb/main-img.png);
     display: flex;
-    width: 1920px;
     height: 1080px;
     flex-direction: column;
 }
 .header-top {
     display: flex;
-    flex-direction:row; 
     justify-content: space-around;
     padding-top :99px;
 }
-h2, h3, h4, h6 {
+h2, h3, h4 {
     margin: 0;
     font-family: Muli;
     font-weight: 800;
+}
+.title--orange {
     color: #f7ae3b;
     font-size: 50px;
+}
+.title--white {
+    color: #ffffff;
+    font-size: 55px;
+}
+.title--article {
+    font-size: 30px;
+    color: #f2612d;
+    padding-left: 62px;
 }
 .blog-content h2 {
     padding-top :98px;
     padding-left: 360px;
-}
-.blog-content h3 {
-    font-size: 30px;
-    color: #f2612d;
-    padding-left: 62px;
 }
 time {
     padding-left: 62px;
@@ -41,7 +45,7 @@ time {
     color: #ffffff;
     font-size: 26px;
 }
-.footer-top h6 {
+.follow h4 {
     font-size: 18px;
     color: #6d450c;
 }
@@ -50,11 +54,25 @@ h5 {
     font-family: Muli;
     font-weight: Bold;
     font-size: 24px;
-    color:#ffffff;
+    color: #ffffff;
+}
+.smoothies {
+    margin: 0 500px;
+}
+.smoothies-block h5 {
+    color: #f2612d;
+    font-size: 25px;
+}
+.smoothies-block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1010px;
+    height: 389px;
 }
 p {
     font-family: Muli;
-    font-weight: Regular;
+    font-weight: 400;
     font-size: 18px;
     line-height: 35px;
 }
@@ -92,9 +110,6 @@ ul {
 .header-top li {
     display: inline;
 }
-*   {
-    border : 3px solid red;
-}
 .menu a{
     font-weight: bold;
     font-family: Muli;
@@ -128,35 +143,42 @@ ul {
     justify-content: center;
 }
 .btn{
-    color: #FFFFFF;
-    -webkit-border-radius:35px;
-    -moz-border-radius:35px;
-    -ms-border-radius:35px;
-    -o-border-radius:35px;
+    border-color: #FFFFFF;
+    background-color: #fff;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
 }
 .btn--green-bg {
     background-color:#0aa566;
-    border-radius:35px;
+    border : none;
     height: 70px;
     width: 280px;
     font-weight: bold;
     font-family: Muli;
     font-size: 24px;
+    border : none;
 }
+
 .btn--opacity-bg {
     background-color: transparent;
     background-repeat: no-repeat;
-    border-color: #ffffff;
     height: 60px;
     width: 204px;
-    font-weight: regular;
+    font-weight: 400;
     font-family: Muli;
     font-size: 21px;
-    border-radius:30px;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.story__btn-wrapper .btn--green-bg {
+    width: 300px;
+    height: 60px;
 }
 .smoothies {
     text-align: center;
@@ -165,7 +187,7 @@ ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: row;
+}
 .about {
     height: 800px;
     background-color: #11846e;
@@ -178,16 +200,34 @@ ul {
     width: 1086px;
     padding-left: 141px;
 }
+.about__btn-wrapper .btn--opacity-bg {
+    width: 380px;
+    font-size : 21px;
+    border-color: #ecb034;
+}
+.about__btn-wrapper {
+    margin-bottom: 94px;
+}
+.underline { 
+    padding-left: 70px;
+    padding-bottom: 48px;
+    
+}
 .about-top li {
     font-family: Muli;
     font-weight: 800;
     font-size: 21px;
-    color :#ffffff; 
+    color :#ffffff;
+    background-image: url(../assets/images/SMweb/marker.png);
+    background-repeat: no-repeat;
+    padding-left: 19px;
+    background-position: 0 4px;
+    margin-bottom: 22px;
 }
 li span {
-    font-weight: Regular;
+    font-weight: 400;
 }
-.summer {
+.summer-pic {
     widows: 691px;
     height: 818px;
     padding-left: 143px;
@@ -197,8 +237,6 @@ li span {
 }
 .products-list{
     display: flex;
-    flex-direction:row;
-    flex-wrap: nowrap;
 }
 .products-choko {
     background-color: #632b15;
@@ -228,7 +266,7 @@ img.products__item {
     margin-bottom: 34px;
 }
 .thin {
-    font-style: regular;
+    font-style: 400;
     font-size : 21px;
 }
 .story {
@@ -237,6 +275,7 @@ img.products__item {
     margin: 0;
     padding-top: 259px;
     padding-left: 308px;
+    padding-right: 202px;
     text-align: left;
 }
 .story-pic {
@@ -250,8 +289,9 @@ img.products__item {
     text-align: center;
     background-color: #6a2f1e;
 }
-.instagram-block {
+.instagram-galery {
     display: flex;
+    margin-bottom: 10px;
 }
 .instagram a {
     display: block;
@@ -267,17 +307,15 @@ img.products__item {
     margin : -6px;
     padding-right :13px;
 }
-.instagram-list {
+.instagram-galery {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
 }
-.instagram-list__item {
+.instagram-galery__item {
     position: relative;
-    width: 384px;
-    height: 384px;
+    width :20%;
+    border: 0;
 }
-.instagram-list__item .insta-icon {
+.insta-icon {
     position: absolute;
     width: 26px;
     height: 26px;
@@ -295,6 +333,8 @@ img.products__item {
     height: 400px;
     padding-left: 360px;
     padding-bottom: 200px;
+    padding-top: 47px;
+
 }
 .line {
     color: #f2612d;
@@ -305,18 +345,25 @@ img.products__item {
 }
 .footer-top {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-around;
     background-color: #fbaf39;
     padding-top: 80px;
+    margin-bottom: 0;
 }
-.footer-top__item {
-    flex-grow:1;
-    text-align: center;
-    justify-content: center;
-    align-items:center;
+.info__item a {
+    text-decoration: none;
+}
+.pay__list {
+    display: flex;
+}
+.follow li {
+    display: inline;
 }
 .footer-buttom {
     background-color: #712d1c;
+    margin-bottom: 0;
+}
+* {
+    border: 3px solid red;
+
 }
