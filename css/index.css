@@ -1,63 +1,110 @@
+/*
+1. Header
+    1.1 header-top
+    1.2 header-content
+2. Main
+    2.1 smoothies
+    2.2 about
+    2.3 products
+    2.4 story
+    2.5 testimonials
+    2.6 blog
+    2.7 instagram
+3. Footer
+    3.1 footer-top
+    3.2 footer-bottom
+4. Helpers
+  */
+
+
 body {
-    margin: 0;
-    width: 1920px;
+    width : 100%;
+    max-width: 1920px;
+    margin: 0 auto;
 } 
-header{
-    background-image: url(../assets/images/SMweb/main-img.png);
-    display: flex;
+
+/* 1. Header */
+header {
+    width: 100%;
+    background-image: url("../assets/images/SMweb/Main.png");
+    background-size: cover;
     height: 1080px;
-    flex-direction: column;
+    margin: 0 auto;
+
 }
+.header-top li {
+    display: inline;
+}
+
+/* 1.1 header-top */
 .header-top {
     display: flex;
+    margin: 0;
     justify-content: space-around;
+    align-items: center;
     padding-top :99px;
+    margin-bottom: 100px;
 }
-h2, h3, h4 {
-    margin: 0;
+.header-top .logo {
+
+}
+
+.menu__link {
+    font-weight: bold;
     font-family: Muli;
-    font-weight: 800;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 10px;
 }
-.title--orange {
-    color: #f7ae3b;
-    font-size: 50px;
+.personal__list-item {
+    margin: 0 20px 0;
 }
-.title--white {
-    color: #ffffff;
-    font-size: 55px;
-}
-.title--article {
-    font-size: 30px;
-    color: #f2612d;
-    padding-left: 62px;
-}
-.blog-content h2 {
-    padding-top :98px;
-    padding-left: 360px;
-}
-time {
-    padding-left: 62px;
-}
-.blog-content p {
-    padding-left: 124px; 
-}
-.footer-top h4 {
-    color: #ffffff;
-    font-size: 26px;
-}
-.follow h4 {
-    font-size: 18px;
-    color: #6d450c;
-}
-h5 {
-    margin: 0;
+.personal__link {
+    font-weight: bold;
     font-family: Muli;
-    font-weight: Bold;
-    font-size: 24px;
-    color: #ffffff;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
 }
+.social__link {
+    font-weight: bold;
+    font-family: Muli;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* 1.2 header-content */
+.header__content-inner {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* 2. Main */
+
+/* 2.1 smoothies */
 .smoothies {
-    margin: 0 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1010px ;
+}
+.container {
+    width: 100%;
+    max-width: 1010px;
+    margin: 0 auto;
+    padding-bottom: 110px;
+    text-align: center;
+}
+.smoothies h2 {
+    padding-top: 99px;
+}
+.smoothies p{
+    margin-bottom: 24px;;
+    width: 90%;
+    margin: 0 auto;    
 }
 .smoothies-block h5 {
     color: #f2612d;
@@ -65,128 +112,34 @@ h5 {
 }
 .smoothies-block {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 1010px;
-    height: 389px;
 }
-p {
-    font-family: Muli;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 35px;
+.sm-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 195px;
+    width :245px;
+
+}
+.sm-features__item {
+    width: 80px;
+    height: 70px;
+    margin-bottom: 30px;
 }
 
-.products-list__item p {
-    font-weight: Italic;
-    color: #ffffff;
-    font-size: 21px;
-}
-.smoothies h2 {
-    padding-top: 99px;
-}
+/* 2.2 about */
 .about h2 {
     font-size: 55px;
     color :#ffffff;
-}
-.testimonials-top span {
-    color: #f2612d;
-}
-.story-top {
-    margin: 0;
-    padding-top: 259px;
 }
 .about-top .title2 {
     color : #ffffff;
 }
 .newcolor {
     color:#cae941
-}
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-} 
-.header-top li {
-    display: inline;
-}
-.menu a{
-    font-weight: bold;
-    font-family: Muli;
-    font-size: 16px;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: .32px 16px;
-}
-.personal ul li a{
-    font-weight: bold;
-    font-family: Muli;
-    font-size: 16px;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: .32px 16px;
-}
-.social ul li a{
-    font-weight: bold;
-    font-family: Muli;
-    font-size: 16px;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: .32px 16px;
-}
-.menu__list .personal__list .social__list {
-    display: flex;
-    justify-content: space-between;
-}
-.header-content{
-    display: flex;
-    justify-content: center;
-}
-.btn{
-    border-color: #FFFFFF;
-    background-color: #fff;
-    border-radius: 35px;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    -ms-border-radius: 35px;
-    -o-border-radius: 35px;
-}
-.btn--green-bg {
-    background-color:#0aa566;
-    border : none;
-    height: 70px;
-    width: 280px;
-    font-weight: bold;
-    font-family: Muli;
-    font-size: 24px;
-    border : none;
-}
-
-.btn--opacity-bg {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    height: 60px;
-    width: 204px;
-    font-weight: 400;
-    font-family: Muli;
-    font-size: 21px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-}
-.story__btn-wrapper .btn--green-bg {
-    width: 300px;
-    height: 60px;
-}
-.smoothies {
-    text-align: center;
-}
-.smoothies-block {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 .about {
     height: 800px;
@@ -210,19 +163,28 @@ ul {
 }
 .underline { 
     padding-left: 70px;
-    padding-bottom: 48px;
-    
+    padding-bottom: 48px;   
 }
-.about-top li {
+.about-list li {
+    padding-left: 40px;
+
     font-family: Muli;
     font-weight: 800;
     font-size: 21px;
     color :#ffffff;
-    background-image: url(../assets/images/SMweb/marker.png);
-    background-repeat: no-repeat;
-    padding-left: 19px;
-    background-position: 0 4px;
-    margin-bottom: 22px;
+
+    position: relative;
+}
+.about-list li::before {
+    content:"";
+    background: url(../assets/images/SMweb/marker.png) 0 0 no-repeat;
+    width : 20px;
+    height: 20px;
+    padding-left: 40px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 li span {
     font-weight: 400;
@@ -235,6 +197,12 @@ li span {
     position: relative;
     z-index: 1;
 }
+/* 2.3 products*/
+.products-list__item p {
+    font-weight: Italic;
+    color: #ffffff;
+    font-size: 21px;
+}
 .products-list{
     display: flex;
 }
@@ -246,7 +214,6 @@ li span {
 }
 .products-lemon {
 background-color: #f3b03d;
-
 }
 .products-turmeric {
 background-color: #c0481c;
@@ -269,14 +236,40 @@ img.products__item {
     font-style: 400;
     font-size : 21px;
 }
+
+/* 2.4 story */
+.story .btn--green-bg {
+    width: 300px;
+    height: 60px;
+    margin: 30px 0 0 0;
+}
 .story {
     display: flex;}
 .story-top {
-    margin: 0;
-    padding-top: 259px;
-    padding-left: 308px;
-    padding-right: 202px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 520px;
+    padding-top: 260px;
     text-align: left;
+    flex: 50%;
+}
+.story__title {
+    margin-bottom: 40px;
+}
+.story__text { 
+    font-size: 18px;
+    font-family: Muli;
+    font-weight: 400;
+}
+.story-stamp {
+    position: relative;
+}
+.stamp {
+    position: absolute;
+    top: 140px;
+    left: -166px;
+    z-index: 10
 }
 .story-pic {
     width: 585px;
@@ -285,10 +278,127 @@ img.products__item {
     padding-bottom: 160px;
     padding-right: 310px;
 }
+
+/* 2.5 testimonials */
 .testimonials {
-    text-align: center;
     background-color: #6a2f1e;
+    width: 100%;
+    margin: 0 auto;
 }
+.testimonials__top  {
+    text-align: center;
+    padding-top: 120px;
+}
+.cite {
+    color: #c5852f;
+}
+.testimonials-content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 75px;
+    position: relative;
+    padding-bottom: 320px;
+}
+.client__name {
+    width: 800px;
+    font-family: Muli;
+    font-weight: 800;
+    color:#5d210d;
+    font-size: 200px;
+    margin: 0;
+    line-height: .8;
+    position: relative;
+    right: 150px;
+}
+p {
+    margin: 0;
+}
+.client__text {
+    text-align: center;
+    display: block;
+    flex: 50%;
+    width: 100%;
+    max-width: 467px;
+    position: absolute;
+    top: 100px;
+    left: 15px;
+    color: #ffffff;
+
+}
+.client__pic {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    -webkit-border-radius: 50% ;
+    -moz-border-radius: 50% ;
+    -ms-border-radius: 50% ;
+    -o-border-radius: 50% ;
+    position: absolute;
+    top: 35px;
+    right: 30px;
+}
+cite {
+    color: #c5852f;
+    font-weight: 600;
+    line-height: 2.5;
+}
+
+
+/* 2.6 blog */
+.blog-content h2 {
+    padding-top :98px;
+    padding-left: 360px;
+}
+time {
+    padding-left: 62px;
+}
+.blog-content p {
+    padding-left: 124px; 
+}
+.blog-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.article {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.article::before {
+    display: inline-block;
+    box-sizing: border-box;
+    content: "";
+    background: url("../assets/images/SMweb/") 0 0 no-repeat;
+}
+
+.follow h4::before {
+    box-sizing: border-box;
+    display: block;
+    content: "";
+    background: url("../assets/images/SMweb/ArrowFollow.png") 0 0 no-repeat;
+
+}
+.blog-pic {
+    margin: 0;
+    width: 555px;
+    height: 400px;
+    padding-left: 360px;
+    padding-bottom: 200px;
+    padding-top: 47px;
+}
+.line {
+    color: #f2612d;
+    width: 687px;
+    height: 12px;
+    padding-top: 266px;
+    padding-bottom: 50px;
+}
+
+/* 2.7 instagram */
 .instagram-galery {
     display: flex;
     margin-bottom: 10px;
@@ -307,9 +417,6 @@ img.products__item {
     margin : -6px;
     padding-right :13px;
 }
-.instagram-galery {
-    display: flex;
-}
 .instagram-galery__item {
     position: relative;
     width :20%;
@@ -322,27 +429,13 @@ img.products__item {
     top: 338px;
     left: 336px;
 }
-.blog-content {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.blog-pic {
-    margin: 0;
-    width: 555px;
-    height: 400px;
-    padding-left: 360px;
-    padding-bottom: 200px;
-    padding-top: 47px;
 
+/* 3. Footer */
+.footer {
+    margin: 0;
 }
-.line {
-    color: #f2612d;
-    width: 687px;
-    height: 12px;
-    padding-top: 266px;
-    padding-bottom: 50px;
-}
+
+/* 3.1 footer-top */
 .footer-top {
     display: flex;
     justify-content: space-around;
@@ -350,20 +443,113 @@ img.products__item {
     padding-top: 80px;
     margin-bottom: 0;
 }
+.footer-top h4 {
+    color: #ffffff;
+    font-size: 26px;
+}
 .info__item a {
     text-decoration: none;
 }
 .pay__list {
     display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 230px;
+}
+.pay__item {
+    display: block;
+    margin: 0;
+    flex: auto;   
+}
+
+.subscribe {
+    width: 500px;
+}
+
+.follow li {
+    display: inline;
+}
+.follow {
+    display: flex;
+    border: 3px solid black;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 .follow li {
     display: inline;
 }
-.footer-buttom {
+.follow .social__item {
+    margin: 0 13px 0;
+}
+.follow h4 {
+    margin-right: 45px;
+    margin-left: 20px;
+} 
+.follow h4 {
+    font-size: 18px;
+    color: #6d450c;
+}
+.follow h4::before {
+    box-sizing: border-box;
+    display: block;
+    content: "";
+    background: url("./assets/images/SMweb/ArrowFollow.png") 0 0 no-repeat;
+
+}
+textarea {
+    width: 495px;
+    height: 60px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+/* 3.2 footer-bottom */
+.footer-bottom {
     background-color: #712d1c;
     margin-bottom: 0;
 }
-* {
-    border: 3px solid red;
+.gotop {
+    font-family: Muli;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+.orange-square {
+    margin: 0;
+}
+.top-arrow {
+    position: absolute;
+    top: -18px;
+    right: 18px;
+    z-index: 10;
+}
 
+/* 4. Helpers */
+.title--orange {
+    color: #f7ae3b;
+    font-size: 50px;
+}
+.title--white {
+    color: #ffffff;
+    font-size: 55px;
+}
+.title--article {
+    font-size: 30px;
+    color: #f2612d;
+    padding-left: 62px;
+}
+.arrow-yellow {
+    display: block;
+    float: right;
+}
+.client {
+    color: #f2612d;
+}
+
+* {
+    border: 1px solid red;
 }
