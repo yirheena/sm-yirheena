@@ -135,68 +135,66 @@ header {
     font-size: 55px;
     color :#ffffff;
 }
-.about-top .title2 {
-    color : #ffffff;
-}
 .newcolor {
-    color:#cae941
+    color:#cae941;
+    font-weight: 400;
+
 }
-.about {
-    height: 800px;
+.container-about {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
     background-color: #11846e;
-    display: flex;   
 }
 .about-top {
     display: block;
+    width: 100%;
+    max-width: 960px;
     margin: 0;
-    padding-top: 99px;
-    width: 1086px;
-    padding-left: 141px;
+    padding-top: 100px;
+
+}
+.summer-pic {
+    margin: 0 auto;
+    padding-left: 140px;
+    position:  relative;
+    z-index: 1;
+    top: 64px;
 }
 .about__btn-wrapper .btn--opacity-bg {
     width: 380px;
     font-size : 21px;
     border-color: #ecb034;
+
 }
 .about__btn-wrapper {
-    margin-bottom: 94px;
+    float: left;
+    padding-top: 50px;
+    
 }
 .underline { 
     padding-left: 70px;
-    padding-bottom: 48px;   
+    padding-bottom: 45px;   
 }
 .about-list li {
-    padding-left: 40px;
-
+    display: block;
     font-family: Muli;
     font-weight: 800;
     font-size: 21px;
     color :#ffffff;
+    line-height: 1.5;
 
-    position: relative;
 }
 .about-list li::before {
     content:"";
     background: url(../assets/images/SMweb/marker.png) 0 0 no-repeat;
     width : 20px;
     height: 20px;
-    padding-left: 40px;
+    padding-left: 30px;
+}
 
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-li span {
-    font-weight: 400;
-}
-.summer-pic {
-    widows: 691px;
-    height: 818px;
-    padding-left: 143px;
-    padding-top: 64px;
-    position: relative;
-    z-index: 1;
-}
+
 /* 2.3 products*/
 .products-list__item p {
     font-weight: Italic;
@@ -442,6 +440,7 @@ time {
     background-color: #fbaf39;
     padding-top: 80px;
     margin-bottom: 0;
+    padding-bottom: 90px;
 }
 .footer-top h4 {
     color: #ffffff;
@@ -449,6 +448,9 @@ time {
 }
 .info__item a {
     text-decoration: none;
+    color: #6d450c;
+    font-size: 18px;
+    font-weight: Bold;
 }
 .pay__list {
     display: flex;
@@ -459,7 +461,6 @@ time {
 .pay__item {
     display: block;
     margin: 0;
-    flex: auto;   
 }
 
 .subscribe {
@@ -508,15 +509,28 @@ textarea {
 
 /* 3.2 footer-bottom */
 .footer-bottom {
+    display: flex;
+    justify-content: center;
     background-color: #712d1c;
     margin-bottom: 0;
+    position: relative;
+}
+.footer-bottom__item {
+    color: #af8a82;
+    font-family: Muli;
+    font-weight: 400;
+    font-size: 13px;
+
 }
 .gotop {
     font-family: Muli;
     font-weight: bold;
     color: #fff;
     text-decoration: none;
-    position: relative;
+    position: absolute;
+    top: -25px;
+    right: 30px;
+    padding-bottom: 20px;
 }
 .orange-square {
     margin: 0;
