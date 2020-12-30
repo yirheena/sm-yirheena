@@ -42,37 +42,26 @@ header {
     margin: 0;
     justify-content: space-around;
     align-items: center;
-    padding-top :99px;
+    padding-top: 100px;
     margin-bottom: 100px;
+    font-weight: bold;
+    font-family: Muli;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+
 }
+
 .header-top .logo {
 
 }
-
 .menu__link {
-    font-weight: bold;
-    font-family: Muli;
-    font-size: 16px;
     color: #FFFFFF;
-    text-decoration: none;
     margin: 0 10px;
 }
+
 .personal__list-item {
     margin: 0 20px 0;
-}
-.personal__link {
-    font-weight: bold;
-    font-family: Muli;
-    font-size: 16px;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-.social__link {
-    font-weight: bold;
-    font-family: Muli;
-    font-size: 16px;
-    color: #FFFFFF;
-    text-decoration: none;
 }
 
 /* 1.2 header-content */
@@ -93,36 +82,34 @@ header {
 }
 .container {
     width: 100%;
-    max-width: 1010px;
     margin: 0 auto;
+    padding-top: 100px;
     padding-bottom: 110px;
     text-align: center;
 }
-.smoothies h2 {
-    padding-top: 99px;
-}
-.smoothies p{
-    margin-bottom: 24px;;
+.smoothies-consist{
     width: 90%;
-    margin: 0 auto;    
+    margin: 25px auto;    
+    margin-bottom: 24px;
 }
 .smoothies-block h5 {
     color: #f2612d;
     font-size: 25px;
 }
 .smoothies-block {
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 .sm-features {
+    flex: 0 1 250px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 195px;
-    width :245px;
-
 }
 .sm-features__item {
     width: 80px;
@@ -260,16 +247,16 @@ img.products__item {
     font-family: Muli;
     font-weight: 400;
 }
-.story-stamp {
+.story-content {
     position: relative;
 }
-.stamp {
+.story-content--stamp {
     position: absolute;
     top: 140px;
     left: -166px;
     z-index: 10
 }
-.story-pic {
+.story-content--pic {
     width: 585px;
     height: 601px;
     padding-top: 120px;
@@ -283,12 +270,9 @@ img.products__item {
     width: 100%;
     margin: 0 auto;
 }
-.testimonials__top  {
+.testimonials-top  {
     text-align: center;
     padding-top: 120px;
-}
-.cite {
-    color: #c5852f;
 }
 .testimonials-content {
     width: 100%;
@@ -300,7 +284,7 @@ img.products__item {
     position: relative;
     padding-bottom: 320px;
 }
-.client__name {
+.client-name {
     width: 800px;
     font-family: Muli;
     font-weight: 800;
@@ -314,7 +298,7 @@ img.products__item {
 p {
     margin: 0;
 }
-.client__text {
+.client-text {
     text-align: center;
     display: block;
     flex: 50%;
@@ -324,9 +308,8 @@ p {
     top: 100px;
     left: 15px;
     color: #ffffff;
-
 }
-.client__pic {
+.client-pic {
     width: 220px;
     height: 220px;
     border-radius: 50%;
@@ -353,7 +336,7 @@ cite {
 time {
     padding-left: 62px;
 }
-.blog-content p {
+.blog-text {
     padding-left: 124px; 
 }
 .blog-content {
@@ -366,20 +349,13 @@ time {
     color: black;
     font-weight: bold;
 }
-.article::before {
+.article::after {
     display: inline-block;
     box-sizing: border-box;
     content: "";
     background: url("../assets/images/SMweb/") 0 0 no-repeat;
 }
 
-.follow h4::before {
-    box-sizing: border-box;
-    display: block;
-    content: "";
-    background: url("../assets/images/SMweb/ArrowFollow.png") 0 0 no-repeat;
-
-}
 .blog-pic {
     margin: 0;
     width: 555px;
@@ -401,7 +377,7 @@ time {
     display: flex;
     margin-bottom: 10px;
 }
-.instagram a {
+.insta-id {
     display: block;
     padding-bottom: 3px;
     text-align: center;
@@ -411,7 +387,7 @@ time {
     font-size : 24px;
     margin-bottom: 44px;
 }
-.instagram a img {
+.insta-pic {
     margin : -6px;
     padding-right :13px;
 }
@@ -425,7 +401,8 @@ time {
     width: 26px;
     height: 26px;
     top: 338px;
-    left: 336px;
+    right: 20px;
+
 }
 
 /* 3. Footer */
@@ -522,7 +499,7 @@ textarea {
     font-size: 13px;
 
 }
-.gotop {
+.footer-bottom__gotop {
     font-family: Muli;
     font-weight: bold;
     color: #fff;
