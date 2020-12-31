@@ -44,6 +44,7 @@
                     <img class="logo__img" src="./assets/images/SMweb/Logo.png" alt="">
                 </a>
             </div><!--/.logo-->
+            <div class="header__top-intro">
             <div class="personal">
                 <ul class="personal__list">
                     <li class="personal__list-item">
@@ -65,8 +66,8 @@
                     </li>
                 </ul><!--/.personal__list-->
             </div><!--/.personal-->
-            <div class="social">
-                <ul class="social__list">
+            <div class="social social-header">
+                <ul class="social__list--header">
                     <li class="social__item">
                         <a class="social__link" href="">
                             <img class="social__icon" src="./assets/images/SMweb/fb.png" alt="Facebook">
@@ -84,6 +85,7 @@
                     </li>
                 </ul><!--/.social__list-->
             </div><!--/.social-->
+            </div> <!--/.header__top-intro-->
         </div> <!--/.header-top-->
         <div class="header-content">
             <div class="header__content-inner">
@@ -176,43 +178,43 @@
 <!-- Products -->
     <section class="products">
         <div class="products-list">
-            <div class="products-list__item products-choko">
+            <div class="products-list__item choko">
                 <img class="products__item" src="./assets/images/SMweb/darkchoco.png" alt="Dark Chocolate">
                 <h5>Dark Chocolate Smoothie</h5>
-                <p>100 ml</p>
+                <p class="volume">100 ml</p>
                 <div class="products__btn-wrapper">
                     <button class="btn btn--opacity-bg">Buy
-                        <img class="arrow-yellow" src="./assets/images/SMweb/Arrow.png">
+                        <img class="arrow-yellow" src="./assets/images/SMweb/arrow-white.png">
                     </button>  
                 </div>                 
             </div>
-            <div class="products-list__item products-vegan">
+            <div class="products-list__item vegan">
                 <img class="products__item" src="./assets/images/SMweb/veganlet.png" alt="Vegan Lettuce">
                 <h5>Vegan Lettuce Smoothie</h5> 
-                <p>100 m</p>
+                <p class="volume">100 m</p>
                 <div class="products__btn-wrapper">
                     <button class="btn btn--opacity-bg">Buy
-                        <img class="arrow-yellow" src="./assets/images/SMweb/Arrow.png">
+                        <img class="arrow-white" src="./assets/images/SMweb/arrow-white.png">
                     </button>
                 </div>      
             </div>
-            <div class="products-list__item products-lemon">
+            <div class="products-list__item lemon">
                 <img class="products__item"  src="./assets/images/SMweb/lemongin.png" alt="Lemon Ginger">
                 <h5>Lemon Ginger Smoothie</h5>
-                <p>100 ml</plass=>
+                <p class="volume">100 ml</plass=>
                 <div class="products__btn-wrapper">
                     <button class="btn btn--opacity-bg">Buy
-                        <img class="arrow-yellow" src="./assets/images/SMweb/Arrow.png">
+                        <img class="arrow-white" src="./assets/images/SMweb/arrow-white.png">
                     </button>
                 </div>      
             </div>
-            <div class="products-list__item products-turmeric">
+            <div class="products-list__item turmeric">
                 <img class="products__item"  src="./assets/images/SMweb/turgarlic.png" alt="Turmeric Garlic">
                 <h5>Turmeric Garlic Smoothie</h5>
-                <p>100 ml</p=>
+                <p class="volume">100 ml</p=>
                 <div class="products__btn-wrapper">
                     <button class="btn btn--opacity-bg">Buy
-                        <img class="arrow-yellow" src="./assets/images/SMweb/Arrow.png">
+                        <img class="arrow-white" src="./assets/images/SMweb/arrow-white.png">
                     </button>
                 </div>      
             </div>
@@ -241,7 +243,12 @@
 <!-- Testimonials -->
     <section class="testimonials">
         <div class="testimonials-top">
+        <div class="testimonials-top__title">
             <h2 class="title title--orange">Why clients <span class="client">LOVE</span> us?</h2>
+        </div>
+            <div class="testimonials-top__pic">
+                <img class="circle" src="./assets/images/SMweb/circle.png" alt="">
+            </div>
         </div>    
         <div class="testimonials-content">
             <div class="client-name">Sarah A</div>
@@ -250,6 +257,12 @@
                 <cite>- from Santa Monica, CA</cite>
             </div>                    
             <img class="client-pic" src="./assets/images/SMweb/face.png" alt="Face">
+            <div class="rewies">
+                <a class="reviews__btn  reviews__btn--prev" href="#"><img class="arrow--yellow"
+                    src="./assets/images/SMweb/Arrow-reverse .png" alt=""></a>
+                <a class="reviews__btn  reviews__btn--next" href="#"><img class="arrow--yellow"
+                    src="./assets/images/SMweb/Arrow.png" alt=""></a>
+            </div>
         </div>    
     </section><!--/.testimonials-->
 
@@ -263,11 +276,15 @@
             <div class="blog-content__item">
                 <img class="line" src="./assets/images/SMweb/Line.png" alt="Line">
                 <h3 class="title title--article">ASAFOETIDA - THE NEXT TURMERIC?</h3>
-                <time datetime="2020-06-16">June 16,2020</time>
+                <time datetime="2020-06-16">June 16, 2020</time>
                 <p class="blog-text">If the fruit ingredients and the green vegetable<br>
                 ingredients are both juiced ahead of time, the mixed juice<br>
                 doesn't even have to be blended like a smoothie, i.e. a<br>
-                green juice or anything... <a class="article" href="">Read More</a></p>
+                green juice or anything... 
+                    <a class="article" href="">Read More
+                        <img class="article__arrow--yellow" src="./assets/images/SMweb/Arrow.png" alt="">
+                    </a>
+                </p>
             </div>
         </div><!--/.blog-content-->    
     </section><!--/.blog-->
@@ -332,14 +349,16 @@
                     </ul>
                 </div><!--/.pay-->   
                 <div class="subscribe">
-                    <div class="form">
+                    <div class="subscribe-top">
                         <h4>Don’t miss out!</h4>
-                        <textarea placeholder="Subscribe to our newsletter"></textarea>
-                    </div>  
+                        <form class="subscribe-top__item" action="/" method="post">
+                            <input class="subscribe__input" type="email" name="name" placeholder="Subscribe to our newsletter">
+                        </form>
+                    </div><!--/.subscribe-top-->  
                     <div class="follow">
                         <img src="./assets/images/SMweb/ArrowFollow.png" alt="Follow Arrow">
                         <h4 class="title title--follow">Follow Us</h4>
-                        <div class="social">
+                        <div class="social social--footer">
                             <ul class="social__list">
                                 <li class="social__item">
                                     <a class="social__link" href="">
@@ -362,7 +381,7 @@
                 </div><!--/.subscribe-->
             </div><!--/.footer-top-->        
             <div class="footer-bottom">
-                <p class="footer-bottom__info">© 2020. All Rights Reserved.</p>
+                <p class="footer-bottom__copyright">© 2020. All Rights Reserved.</p>
                 <a class="footer-bottom__gotop" href="#top">Go top
                     <img class="orange-square" src="./assets/images/SMweb/gotop.png" alt="Top Direction">
                     <img class="top-arrow" src="./assets/images/SMweb/GotopArrow.png" alt="Top arrow">
